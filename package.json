@@ -1,6 +1,6 @@
 {
   "name": "advanced-react-patterns",
-  "title": "Advanced React Patterns 🤯",
+  "title": "Advanced React Patterns \ud83e\udd2f",
   "description": "Advanced React Component Patterns Course by Kent C. Dodds",
   "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com/)",
   "version": "1.0.0",
@@ -11,7 +11,7 @@
   "main": "src/index.js",
   "engines": {
     "node": "14 || 16 || 18",
-    "npm": ">=6"
+    "npm": ">=8.16.0"
   },
   "dependencies": {
     "@kentcdodds/react-workshop-app": "^6.0.1",
@@ -34,8 +34,8 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
+    "start": "node api.js && craco start",
+    "build": "node api.js && craco build",
     "test": "craco test",
     "test:coverage": "npm run test -- --watchAll=false",
     "test:exercises": "npm run test -- testing.*exercises\\/ --onlyChanged",
